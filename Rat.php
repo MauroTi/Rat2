@@ -14,10 +14,7 @@
 
         <!-- Ordem de Serviço -->
         <section class="form-section">
-            <h2>
-                Dados da Ordem de Serviço
-                <input type="text" id="rat-number" placeholder="Número do RAT" class="rat-input">
-            </h2>
+            <h2>Dados da Ordem de Serviço</h2>
             <div class="form-group-row">
                 <div class="form-group">
                     <label for="os-number">Número da OS:</label>
@@ -31,12 +28,12 @@
                     <label for="os-time">Hora:</label>
                     <input type="time" id="os-time">
                 </div>
-            </div>
-            <div class="form-group-row">
                 <div class="form-group">
                     <label for="contract">Contrato:</label>
                     <input type="text" id="contract" placeholder="12345-XYZ">
                 </div>
+            </div>
+            <div class="form-group-row">
                 <div class="form-group">
                     <label for="warranty">Garantia:</label>
                     <input type="text" id="warranty" placeholder="Sim/Não">
@@ -45,10 +42,14 @@
                     <label for="eventual-payment">Eventual a Pagar:</label>
                     <input type="text" id="eventual-payment" placeholder="R$ 0,00">
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="demonstration">Demonstração:</label>
-                <input type="text" id="demonstration" placeholder="Sim/Não">
+                <div class="form-group">
+                    <label for="demonstration">Demonstração:</label>
+                    <input type="text" id="demonstration" placeholder="Sim/Não">
+                </div>
+                <div class="form-group">
+                    <label for="equipment">Equipamento:</label>
+                    <input type="text" id="equipment" placeholder="Computador, Impressora">
+                </div>
             </div>
         </section>
 
@@ -64,8 +65,6 @@
                     <label for="client-cnpj">CNPJ:</label>
                     <input type="text" id="client-cnpj" placeholder="00.000.000/0001-00">
                 </div>
-            </div>
-            <div class="form-group-row">
                 <div class="form-group">
                     <label for="client-address">Endereço:</label>
                     <input type="text" id="client-address" placeholder="Rua Exemplo, 100, Centro">
@@ -73,20 +72,6 @@
                 <div class="form-group">
                     <label for="client-city">Cidade:</label>
                     <input type="text" id="client-city" placeholder="São Paulo">
-                </div>
-                <div class="form-group">
-                    <label for="client-cep">CEP:</label>
-                    <input type="text" id="client-cep" placeholder="00000-000">
-                </div>
-            </div>
-            <div class="form-group-row">
-                <div class="form-group">
-                    <label for="client-phone">Telefone:</label>
-                    <input type="tel" id="client-phone" placeholder="(11) 0000-0000">
-                </div>
-                <div class="form-group">
-                    <label for="client-state-inscription">Inscrição Estadual:</label>
-                    <input type="text" id="client-state-inscription" placeholder="123.456.789.123">
                 </div>
             </div>
         </section>
@@ -114,39 +99,10 @@
             </div>
         </section>
 
-        <!-- Dados do Equipamento -->
-        <section class="form-section">
-            <h2>Dados do Equipamento</h2>
-            <div class="form-group-row">
-                <div class="form-group">
-                    <label for="equipment-type">Equipamento:</label>
-                    <input type="text" id="equipment-type" placeholder="Computador, Impressora">
-                </div>
-                <div class="form-group">
-                    <label for="equipment-brand">Marca:</label>
-                    <input type="text" id="equipment-brand" placeholder="Dell, HP">
-                </div>
-            </div>
-            <div class="form-group-row">
-                <div class="form-group">
-                    <label for="equipment-model">Modelo:</label>
-                    <input type="text" id="equipment-model" placeholder="Inspiron 15">
-                </div>
-                <div class="form-group">
-                    <label for="equipment-serial">Série:</label>
-                    <input type="text" id="equipment-serial" placeholder="XYZ123456">
-                </div>
-                <div class="form-group">
-                    <label for="equipment-patrimonio">Patrimônio:</label>
-                    <input type="text" id="equipment-patrimonio" placeholder="12345">
-                </div>
-            </div>
-        </section>
-
         <!-- Atendimento -->
         <section class="form-section">
             <h2>Atendimento</h2>
-            <div class="form-group-row">
+            <div class="form-group-row atendimento-group">
                 <div class="form-group">
                     <label for="attendance-date">Data do Atendimento:</label>
                     <input type="date" id="attendance-date">
@@ -159,15 +115,9 @@
                     <label for="end-time">Término:</label>
                     <input type="time" id="end-time">
                 </div>
-            </div>
-            <div class="form-group-row">
                 <div class="form-group">
                     <label for="correct-serial">Série Correta:</label>
                     <input type="text" id="correct-serial" placeholder="XYZ123456">
-                </div>
-                <div class="form-group">
-                    <label for="correct-patrimonio">Patrimônio Correto:</label>
-                    <input type="text" id="correct-patrimonio" placeholder="12345">
                 </div>
             </div>
         </section>
@@ -214,7 +164,22 @@
                 <textarea id="pending-info" rows="2"></textarea>
             </div>
         </section>
-        
+
+        <!-- Assinaturas -->
+        <section class="form-section">
+            <h2>Assinaturas</h2>
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="client-signature">Assinatura do Cliente:</label>
+                    <input type="text" id="client-signature" placeholder="Assinatura ou Carimbo">
+                </div>
+                <div class="form-group">
+                    <label for="technician-signature">Assinatura do Técnico:</label>
+                    <input type="text" id="technician-signature" placeholder="Assinatura do Técnico">
+                </div>
+            </div>
+        </section>
+
         <footer>
             <button type="submit">Enviar Relatório</button>
         </footer>
