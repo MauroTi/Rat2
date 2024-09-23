@@ -14,7 +14,10 @@
 
         <!-- Ordem de Serviço -->
         <section class="form-section">
-            <h2>Dados da Ordem de Serviço</h2>
+            <h2>
+                Dados da Ordem de Serviço
+                <input type="text" id="rat-number" placeholder="Número do RAT" class="rat-input">
+            </h2>
             <div class="form-group-row">
                 <div class="form-group">
                     <label for="os-number">Número da OS:</label>
@@ -211,22 +214,7 @@
                 <textarea id="pending-info" rows="2"></textarea>
             </div>
         </section>
-
-        <!-- Assinaturas -->
-        <section class="form-section">
-            <h2>Assinaturas</h2>
-            <div class="form-group-row">
-                <div class="form-group">
-                    <label for="client-signature">Assinatura do Cliente:</label>
-                    <input type="text" id="client-signature" placeholder="Assinatura ou Carimbo">
-                </div>
-                <div class="form-group">
-                    <label for="technician-signature">Assinatura do Técnico:</label>
-                    <input type="text" id="technician-signature" placeholder="Assinatura do Técnico">
-                </div>
-            </div>
-        </section>
-
+        
         <footer>
             <button type="submit">Enviar Relatório</button>
         </footer>

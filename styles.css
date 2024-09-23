@@ -12,7 +12,7 @@ body {
 
 .container {
     background-color: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -33,25 +33,39 @@ h2 {
     margin: 5px 0;
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.rat-input {
+    width: 10px; /* Ajustado para caber 6 algarismos */
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-left: auto; /* Mantém alinhado à direita */
+}
+
+/* Estilo dos grupos de formulário */
 .form-group {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .form-group-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
 
+/* Quatro colunas para os campos */
 .form-group-row > .form-group {
-    flex: 1 1 calc(50% - 10px); /* 2 items per row */
+    flex: 1 1 calc(25% - 10px); /* 4 itens por linha */
 }
 
 label {
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #555;
 }
 
@@ -62,10 +76,10 @@ input[type="date"],
 input[type="time"],
 textarea {
     width: 100%;
-    padding: 4px;
+    padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     box-sizing: border-box;
 }
 
@@ -75,14 +89,14 @@ textarea {
 
 button[type="submit"] {
     width: auto;
-    padding: 5px 10px;
+    padding: 10px 15px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 0.8em;
+    font-size: 1em;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 button[type="submit"]:hover {
@@ -90,7 +104,7 @@ button[type="submit"]:hover {
 }
 
 footer {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -105,7 +119,7 @@ footer {
     .container {
         box-shadow: none;
         border-radius: 0;
-        padding: 5mm;
+        padding: 10mm;
         width: 100%;
         max-width: none; /* Full page width */
         margin: 0;
@@ -117,7 +131,7 @@ footer {
     }
 
     h2 {
-        font-size: 0.8em;
+        font-size: 0.9em;
         margin: 3px 0;
         padding-bottom: 3px;
     }
@@ -128,13 +142,13 @@ footer {
         gap: 5px;
     }
 
-    .form-group {
-        flex: 1 1 calc(33% - 10px); /* 3 items per row */
-        min-width: 0; /* Prevent overflow */
+    .form-group-row > .form-group {
+        flex: 1 1 calc(25% - 10px); /* 4 itens por linha */
+        min-width: 0;
     }
 
     label {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     input[type="text"],
@@ -143,7 +157,7 @@ footer {
     input[type="date"],
     input[type="time"],
     textarea {
-        font-size: 0.7em;
+        font-size: 0.8em;
         padding: 3px;
     }
 
@@ -156,6 +170,6 @@ footer {
     }
 
     @page {
-        margin: 5mm; /* Minimal margins for print */
+        margin: 10mm; /* Ajuste para caber em uma folha A4 */
     }
 }
